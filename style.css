@@ -23,7 +23,7 @@ h1 {
 /* Display-området */
 .display {
     background-color: #000;
-    color: #0f0;
+    color: rgb(103, 104, 103);
     font-size: 24px;
     padding: 15px;
     text-align: right;
@@ -35,46 +35,46 @@ h1 {
 /* Knapp-området - OBS! Bara en rad knappar nu */
 .buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
-    /* Väldigt liten gap - du kanske vill ändra? */
-    margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  /* 4 kolumner */
+    gap: 10px;
 }
 
 /* Alla knappar - har några problem som du behöver fixa! */
+
 button {
-    padding: 5px;
-    /* För liten padding? */
-    font-size: 12px;
-    /* För liten text? */
-    border: 2px solid black;
-    /* Ful ram? */
-    border-radius: 0px;
-    /* Inga rundade hörn? */
-    cursor: pointer;
-    /* Ingen bakgrundsfärg? Knapparna ser konstiga ut! */
+    padding: 20px;        /* Istället för 5px */
+    font-size: 18px;      /* Istället för 12px */
+    border: none;         /* Istället för 2px solid black */
+    border-radius: 5px;   /* Istället för 0px */
+    cursor: pointer; 
 }
+
 
 /* TODO: Knapparna behöver färger! */
 /* Här behöver du lägga till CSS för olika typer av knappar */
 
 /* Exempel för nummer-knappar: */
-/* .number { */
-/*     background-color: ? */
-/*     color: ? */
-/* } */
+.number { 
+ background-color: #e0e0e0;
+ color: #333;
+
+ }
 
 /* Exempel för operator-knappar: */
-/* .operator { */
-/*     background-color: ? */
-/*     color: ? */
-/* } */
+.operator { 
+background-color:  #ff9500;
+color: #333;
+ } 
 
-/* Exempel för equals-knapp: */
-/* .equals { */
-/*     background-color: ? */
-/*     color: ? */
-/* } */
+ .equals {
+    background-color: #ff9500;  /* Orange */
+    color: #333;
+}
+.clear {
+    background-color: #ff9500;
+    color: #333;
+}
+
 
 /* Debug-område */
 .debug {
